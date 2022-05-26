@@ -11,18 +11,20 @@
   </head>
   <body>
     <button class="heartBtn">heart</button>
-    <p class="text"></p>
-    <p class="text2"></p>
+    <p class="text">hi</p>
+    <p class="text2">hello</p>
+    <iframe src="https://rkskekzzz.github.io/notion_heart_button/" />
   </body>
   <script>
     const heartBtn = document.querySelector('.heartBtn');
     const text = document.querySelector('.text');
     const text2 = document.querySelector('.text2');
+    const test = window.parent.document;
 
     heartBtn.addEventListener('click', () => {
       console.log(window.location.href);
       text.innerHTML = 'why...' + document.referrer;
-      text2.innerHTML = '? : ' + location.href;
+      text2.innerHTML = '? : ' + test;
       heartBtn.innerHTML = location.href;
     });
   </script>

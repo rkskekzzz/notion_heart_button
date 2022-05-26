@@ -22,7 +22,7 @@
     heartBtn.addEventListener('click', () => {
       console.log(window.location.href);
       text.innerHTML =
-        '? : ' + (window.location != window.parent.location)
+        '! : ' + (window.location != window.parent.location)
           ? document.referrer
           : document.location.href;
       text2.innerHTML = '? : ' + location.href;

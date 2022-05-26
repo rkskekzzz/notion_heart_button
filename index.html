@@ -7,15 +7,15 @@
     <title>Simple ToDos</title>
     <link rel="stylesheet" href="style.css" />
     <!-- <script src="index.js"> -->
-    <script>
-      const heartBtn = document.querySelector('.heartBtn');
-
-      heartBtn.addEventListener('click', () => {
-        console.log(window.location);
-      });
-    </script>
   </head>
   <body>
     <button class="heartBtn">heart</button>
   </body>
+  <script>
+    const heartBtn = document.querySelector('.heartBtn');
+
+    heartBtn.addEventListener('click', () => {
+      console.log(window.location.href);
+    });
+  </script>
 </html>

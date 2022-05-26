@@ -10,12 +10,15 @@
   </head>
   <body>
     <button class="heartBtn">heart</button>
+    <p class="text"></p>
   </body>
   <script>
     const heartBtn = document.querySelector('.heartBtn');
+    const text = document.querySelector('.text');
 
     heartBtn.addEventListener('click', () => {
       console.log(window.location.href);
+      text.innerHTML = window.location.href;
     });
   </script>
 </html>

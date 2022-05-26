@@ -11,14 +11,17 @@
   <body>
     <button class="heartBtn">heart</button>
     <p class="text"></p>
+    <p class="text2"></p>
   </body>
   <script>
     const heartBtn = document.querySelector('.heartBtn');
     const text = document.querySelector('.text');
+    const text2 = document.querySelector('.text2');
 
     heartBtn.addEventListener('click', () => {
       console.log(window.location.href);
-      text.innerHTML = window.location.href;
+      text.innerHTML = '? : ' + window.location.href;
+      text2.innerHTML = '? : ' + location.href;
     });
   </script>
 </html>
